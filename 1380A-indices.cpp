@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iterator>
 #include <string>
 #include <sstream>
 #include <vector>
@@ -11,10 +12,8 @@ int main(){
 
     int** res = new int*[n];
     for(int i=0, j; i< n; i++) {
-        res[i] = new int[3];
-        memset(res[i], 0, sizeof(int)*3);
+        res[i] = new int[3]();
         cin>>j;
-        int* p = new int[j];
         string str;
         cin.ignore();
         getline(cin, str);
@@ -46,5 +45,6 @@ int main(){
             cout<<res[i][0]<<" "<<res[i][1]<<" "<<res[i][2]<<endl;
         }
     }
+    delete[] res;
 }
 
