@@ -3,6 +3,7 @@
 #include <string>
 #include <sstream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -21,10 +22,10 @@ int main() {
     vector<int> array(start, end);
     sort(array.begin(),array.end());
 
-    vector<int> arrayZsorted;
-    for(int i=0; i < n; i++) {
-        if ( (n-i > i) && array[n-i-1] <= array[i] ) {
-            cout<<"Impossible";
+    vector<int> arrayZsorted; //[1, 2, 2, 1] -> []
+    for(int i=0; 2*i < n; i++) {
+        if ( i>0 && array[n-i] < array[i] ) {
+            cout<<"Impossible"<<endl;
             return 0;
         }
         arrayZsorted.push_back(array[i]);
