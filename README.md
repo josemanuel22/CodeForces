@@ -5,4 +5,8 @@ Some solutions to some problems of code [codeforces](problemset?order=BY_RATING_
 ## Problems solved
 * 4A watermelons
 * 282A bit
+* 231A team
+*
+*
+*
 *
