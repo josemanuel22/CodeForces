@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <iterator>
 #include <string>
+#include <cstring>
 #include <sstream>
 
 using namespace std;
@@ -21,17 +22,20 @@ int main() {
 
         cin>>l>>x;
 
-        string str;
+        string str1;
 
         cin.ignore();
-        getline(cin, str);
+        getline(cin, str1);
 
-        stringstream ss1(str);
+        stringstream ss1(str1);
         auto start_array_a = istream_iterator<int>(ss1);
         auto end_array_a = istream_iterator<int>();
         vector<int> array_a(start_array_a, end_array_a);
 
-        stringstream ss2(str);
+        string str2;
+        getline(cin, str2);
+
+        stringstream ss2(str2);
         auto start_array_b = istream_iterator<int>(ss2);
         auto end_array_b = istream_iterator<int>();
         vector<int> array_b(start_array_b, end_array_b);
