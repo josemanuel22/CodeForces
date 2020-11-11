@@ -1,4 +1,4 @@
-# CodeForces 
+# CodeForces
 
 Some solutions to some problems of code [codeforces](problemset?order=BY_RATING_DESC) problemset, see statement at the link.
 
@@ -12,3 +12,4 @@ Some solutions to some problems of code [codeforces](problemset?order=BY_RATING_
 * 652B Zsort
 * 71A longWords
 * 1272A friends
+* 1445A rearrangment
